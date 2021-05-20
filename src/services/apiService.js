@@ -19,7 +19,6 @@ export default class ImagesApiService {
       })
       .then(images => {
         this.incrementPage();
-        console.log(images);
         return images.hits;
       });
   }

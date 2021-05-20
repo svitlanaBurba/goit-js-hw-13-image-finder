@@ -27,7 +27,6 @@ function onSearch(e) {
   e.preventDefault();
 
   imagesApiService.query = e.currentTarget.elements.query.value;
-  console.log(e.currentTarget.elements.query.value);
 
   if (imagesApiService.query === '') {
     return error({ delay: 2500, text: 'Enter something...' });
