@@ -1,5 +1,5 @@
 import imagesTpl from './templates/imagesTpl.hbs';
-import './sass/main.scss';
+import './sass/main1.scss';
 import ImagesApiService from './services/apiService';
 import LoadMoreBtn from './components/load-more-btn.js';
 
