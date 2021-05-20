@@ -1,0 +1,119 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background: #fff;
+  font-size: 16px;
+  padding: 30px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.search-form {
+  display: flex;
+  align-items: flex-end;
+  padding: 8px;
+  margin-bottom: 24px;
+}
+.sr-only {
+  padding-bottom: 6px;
+}
+
+button {
+  display: block;
+  margin-left: 30px;
+}
+.btn-coral {
+  background-color: coral;
+  color: white;
+  border-color: lightcoral;
+}
+
+button[data-action='load-more'].is-hidden {
+  display: none;
+}
+
+button[data-action='load-more'] > .spinner.is-hidden {
+  display: none;
+}
+
+// .gallery {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+//   grid-auto-rows: 240px;
+//   grid-gap: 12px;
+//   padding: 0;
+//   margin: 0;
+//   list-style: none;
+//   max-width: calc(100vw - 80px);
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 30px;
+// }
+// // .photo-card {
+// //   display: grid;
+// // }
+// // .photo-card img {
+// //   grid-auto-rows: 380px;
+// // }
+
+// .stats {
+//   display: flex;
+//   justify-content: space-around;
+// }
+
+.gallery {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 30px 10px;
+}
+
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc((100% - 4 * 20px) / 3);
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.photo-card:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 270px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.stats-item {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.material-icons {
+  margin-right: 5px;
+  color: #948c8c;
+}
+
+.btn-coral {
+  background-color: coral;
+  color: white;
+  border-color: lightcoral;
+}
